@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aws-healthchecker-response"
-version = "0.2.0"
+version = "0.2.1"
 description = "Django Middleware to return a 200 response to the AWS ELB HealthChecker without doing Host header checks"
 authors = ["Matt Magin <matt.magin@cmv.com.au>"]
 license = "MIT"
