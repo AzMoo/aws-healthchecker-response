@@ -10,4 +10,4 @@ class AWSHealthCheckerResponseMiddleware(MiddlewareMixin):
     def process_request(self, request):
         if request.META.get('User-Agent', None) in getattr(settings, 'AWS_HEALTH_CHECKER_USER_AGENT', DEFAULT_USER_AGENT):
             return HttpResponse("OK")
-        return self.get_response(request)
+        return None
